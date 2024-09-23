@@ -24,9 +24,7 @@
 
 
         static void Main()
-        {
-            WriteValues();
-            ReadValues();
+        {           
             string AnotherFilePath = @"C:\Users\ivan.bannikov\Desktop\BinaryFile.bin";
             if (File.Exists(AnotherFilePath))
             {
@@ -37,7 +35,9 @@
                 }
                 Console.WriteLine("Из файла считано:");
                 Console.WriteLine(ResultingValue);
-            }
+            } 
+            WriteValues();
+            ReadValues();
         }
     }
 }
